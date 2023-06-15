@@ -1,0 +1,180 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+
+
+.background {
+    background: hsl(235, 18%, 26%);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.letter-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    gap: 20px;
+   
+}
+.letter-info h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color:  hsl(234, 29%, 20%);
+}
+
+.letter-info p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.letter {
+    background:hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69%;
+    height: 620px;
+    border-radius: 39px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    font-weight: 700px;
+    font-family: 'Roboto', sans-serif;
+}
+h6 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+input {
+    width: 100%;
+    height: 3.6rem;
+    padding-left: 30px;
+    outline: none;
+    border-radius: 8px;
+    border: 0.2px solid #e0d9d9;
+    background: transparent;
+    
+}
+
+button {
+    width: 100%;
+    height: 3.6rem;
+    color: #fff;
+    background:  hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif; 
+}
+.succeed {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+.succeed p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.succeed img {
+    width: 20px;
+    height: 20px;
+}
+
+.vg svg{
+    padding-left: 120px;
+
+}
+svg{
+    display: flex;
+}
+.vg img {
+    display: none;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+
+@media screen and (max-width: 500px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     .succeed img{
+        width: 8%;
+        height: 8%;
+      
+    
+    }
+    .letter-info p {
+        font-size: 1rem;
+    }
+    .background {
+        background: #fff;
+        /* padding-left: 20px; */
+       
+        
+    }
+    .letter {
+        background:hsl(0, 0%, 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: fit-content;
+      
+       
+        
+    
+    }
+    .letter-info {
+        padding-top: 60px;
+        
+    }
+     svg{
+      display: none;
+    }
+    .vg img{
+        display: flex;
+        margin-top: 130px;
+        width: fit-content;
+    }
+
+    .succeed p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        width: 380px;
+    }
+    form {
+        padding-right: 20px;
+        padding-bottom: 40px;
+    } 
+
+}
